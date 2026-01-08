@@ -4,6 +4,16 @@ nginx_port: 80
 nginx_root: "/var/www/html"
 nginx_user: "www-data"
 nginx_worker_connections: 1024
+page_title: "Minuapp"
+site_name: "{{ inventory_hostname }}"
+show_debug: false
+services:
+- name: "nginx"
+  port: 80
+  desc: "Web server"
+- name: "ssh"
+  port: 22
+  desc: "Remote access"
 
 # Rakenduse info
 app_name: "MinuApp"

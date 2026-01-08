@@ -37,7 +37,7 @@
         {% endif %}
         
         <h3>Services:</h3>
-        {% for service in services %}
+        {% for service in services | default([]) %}
         <p>{{ service.name }} on port {{ service.port }}</p>
         {% endfor %}
     </div>

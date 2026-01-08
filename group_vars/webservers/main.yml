@@ -1,4 +1,12 @@
 ---
+# Nginx seaded - kehtivad KÕIGILE webservers grupis
 nginx_port: 80
+nginx_root: "/var/www/html"
+nginx_user: "www-data"
+nginx_worker_connections: 1024
+
+# Rakenduse info
+app_name: "MinuApp"
+app_environment: "production"
 nginx_worker_processes: auto
 mysql_port: 3306

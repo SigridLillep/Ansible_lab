@@ -20,3 +20,4 @@ app_name: "MinuApp"
 app_environment: "production"
 nginx_worker_processes: auto
 mysql_port: 3306
+debug_mode: false
